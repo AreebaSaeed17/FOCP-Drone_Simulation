@@ -211,10 +211,10 @@ int main() {
 	//Calling in the intro function to display the Welcome msg
 	intro(battery, weather, start);
 
-	//Calling Delivery_Time() function to display ETA
-	Delivery_Time();
-
 	if (start == "yes" || start == "Yes" || start == "YES") {
+		//Calling Delivery_Time() function to display ETA
+		Delivery_Time();
+		
 		//initializing counters to store status of delivery
 		int successful = 0, delayed = 0, failed = 0;
 		string location;
@@ -242,7 +242,11 @@ int main() {
 		//Displaying the overall summary
 		summary(successful, delayed, failed, battery);
 	}
+	else{
+		cout<<"You haven't started the delivery program. The program will now exit.";
+		cout<<"____________________________________________________________________\n";
 	return 0;
 }
+
 
 
