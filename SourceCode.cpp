@@ -2,9 +2,6 @@
 #include<iostream>
 #include<cstdlib>
 #include<ctime>
-#include<string>
-#include<algorithm>
-#include<cctype>
 
 using namespace std;			
 //__________________Creating all the necessary functions__________________
@@ -247,6 +244,7 @@ int main() {
 		cout<<"____________________________________________________________________\n";
 	return 0;
 }
+
 
 
 
