@@ -91,10 +91,12 @@ bool heavyload()
  int weight = rand()%10+1;
  
  if(weight > 5)
-   { cout<<"HEAVY LOAD WARNING!\n Package Load is more than 5kg, Drone might slow down during delivery.\n";
+   { cout<<"HEAVY LOAD WARNING!\nPackage Load is more than 5kg, Drone might slow down during delivery.\n";
+	return 1;
    }
  else 
-   {cout<<"Weight is within the recommended limit. Drone taking off for delivery. \n"; }
+   {cout<<"Weight is within the recommended limit. Drone taking off for delivery. \n"; 
+   return 0;}
   }
 void DelayTimer(int DelayTime) {
     Sleep(DelayTime);}	
@@ -276,6 +278,7 @@ int main() {
 	return 0;
 }
 }
+
 
 
 
