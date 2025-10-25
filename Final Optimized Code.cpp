@@ -87,15 +87,14 @@ void SuccessRate(int successful, int unsuccessful, int delayed) {
     cout << "Success Rate: " << rate << "%\n";
 }
 bool heavyload()
-{cout<<"----------Measuring Weight-----------\n";
+{cout<<"_______________Measuring Weight________________\n";
  int weight = rand()%10+1;
  
  if(weight > 5)
-   { cout<<"HEAVY LOAD WARNING!!!!\nWeight is more than 5kg, Drone might slow down during mission\n";
-   return 0;}
+   { cout<<"HEAVY LOAD WARNING!\n Package Load is more than 5kg, Drone might slow down during delivery.\n";
+   }
  else 
-   {cout<<"Weight is within the limit Drone taking off \n";
-   return 1;}
+   {cout<<"Weight is within the recommended limit. Drone taking off for delivery. \n"; }
   }
 void DelayTimer(int DelayTime) {
     Sleep(DelayTime);}	
@@ -113,7 +112,7 @@ void summary(int successful, int delayed, int failed, int battery) {
 }
 
 void Decision_Logic(string location, int& battery, int& successful, int& delayed, int& failed) {
-	//I've created this funCtion to easily check the constraints for delivery each time
+	//I've created this function to easily check the constraints for delivery each time
       heavyload();
 	//displaying where The Drone is Delivering
 	cout << "Delivering to: " << location << endl;
@@ -277,6 +276,7 @@ int main() {
 	return 0;
 }
 }
+
 
 
 
