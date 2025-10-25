@@ -8,7 +8,7 @@ using namespace std;
 
 int BatteryLevel() {
 	//I want the battery level to be btw 85 and 15
-	int battery_level = (rand() % 70) + 15;
+	int battery_level = (rand() % 71) + 15;
 	return battery_level;
 }
 
@@ -60,7 +60,7 @@ void Location_From_User(string& loc1, string& loc2, string& loc3) {
 
 int Battery_Drain() {
 	//to keep in between 10 & 25 as per the qs req
-	int battery_drain = (rand() % 15) + 10;
+	int battery_drain = (rand() % 16) + 10;
 	return battery_drain;
 }
 
@@ -244,6 +244,7 @@ int main() {
 		cout<<"____________________________________________________________________\n";
 	return 0;
 }
+
 
 
 
