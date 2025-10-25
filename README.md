@@ -1,7 +1,7 @@
 # FOCP-Drone_Simulation
 # TITLE AND TEAM INFORMATION
 # TITLE : DELIVERY DRONE SIMULATOR
-# Team Name : 
+# Team Name : Drone Engineers 🕹️✨
 # Team Memebrs & Roles :
 1. Areeba Saeed : Team Leader & Programmer 1 ( Designed and implemented core functions, managed user interaction, and coordinated overall project development ).       
 2. Urooj Fatima : Programmer 2 & Logic Designer ( Created the program’s logic flow and flowchart, integrated additional features, and refined the code for efficiency ).       
@@ -25,6 +25,9 @@ We have designed the following functions:
 | `Intro()`               | Displays the battery level and weather condition, then prompts the user to start the day. |
 | `Summary()`             | Displays a summary at the end of deliveries, including total, successful, and failed deliveries, plus remaining battery. |
 | `Decision_Logic()`      | Core decision-making function that evaluates all conditions and updates delivery status for each delivery. |
+| `SuccessRate()`         | Displays the success rate of the deliveries (performance score). |
+| `HeavyLoad()`           |Displays the load that the drone carries and issues a warning if the load is over a specified threshold. |
+| `DelayTimer()`          | Adds a small pause after each delivery to reflect realistic drone behavior and simulate time spent in transit or handling. |
 # Logic Flow :
 1. The program begins with Intro() in which weather and battery level are initialized and the user is asked to start the simulation.   
 2. If the user enters 'yes' to proceed with the delivery, Delivery_Time() showcases the estimated time of arrival for each location.   
@@ -37,5 +40,10 @@ Updates battery level and delivery counters accordingly.
 # - Description of how random environmental factors are simulated :
 Environmental factors (weather, obstacles, battery level, battery drain, and malfunction) are randomized using  to simulate real-world unpredictability.
 # Execution Instructions :
+# AI Tool Reflection :
+We have utilised the help of AI specifically Chat GPT for two things in our program:    
+1. Function for delay timer : We have added the delay timer function with the help of AI. When encountred with the task, we tried several times before resorting to the help of AI. With the help of Chat GPT, we learned how to simulate real-time pauses in program execution using system-level functionality. Working with AI to implement this taught us how to use platform-specific libraries like windows.h to access built-in functions such as Sleep() and how to modularize functionality by creating reusable delay logic instead of repeating code.     
+2. Performance Score Formula : With the help of Chat GPT, we developed a formula for performance score to evaluate the performance of our drone in order to see how effectively and reliably it operates under various conditions and determine mission success. We learned how to turn real-world behavior into measurable logic and use AI to design, refine, and implement a scoring system efficiently.
+
 
 
