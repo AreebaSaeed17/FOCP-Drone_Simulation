@@ -13,13 +13,15 @@ This program simulates real-world decision-making in autonomous systems, integra
 # Program Design / Logic :
 # Included Functions :
 We have designed the following functions:
-BatteryLevel() : We have initialized battery of the drone with a random number between 15 and 85.
-WeatherInfo () : Randomly generates a number between 0 and 2 and assigns a particular in this range to each weather (sunny, windy or rainy ) and then randomly selects a weather condition.
-Check_For_Obstacle() : Randomly determines whether a potential obstacle in present in the way.
-SystemMalfunction () : Checks the possibility of a system malfunction in the drone.
-Delivery_Time () : Displays the time it will take to deliver at each particular location.
-Location_From_User () : Prompts the user to input the order in which the delivery will take place.
-Battery_Drain () : Randomly generates a battery drain per trip.
-Intro () : Displays the battery level and the weather condition and prompts the user to start the day.
-Summary () : Displays the end of the delivery summary i.e. total deliveries, successful and failed atttempts and the remaining battery.
-Decision_Logic () :  Core decision-making function that evaluates conditions and updates delivery status for each delivery. Optimizes the main function as the key decisions are taken here.
+| **Function**           | **Description** |
+|-------------------------|-----------------|
+| `BatteryLevel()`        | Initializes the drone’s battery with a random value between 15 and 85. |
+| `WeatherInfo()`         | Randomly generates a number between 0 and 2 to assign a weather condition (sunny, windy, or rainy), then selects one randomly. |
+| `Check_For_Obstacle()`  | Randomly determines whether an obstacle is present in the path. |
+| `SystemMalfunction()`   | Checks the possibility of a system malfunction in the drone. |
+| `Delivery_Time()`       | Displays the estimated time required for delivery at each location. |
+| `Location_From_User()`  | Prompts the user to input the order of deliveries. |
+| `Battery_Drain()`       | Randomly generates the amount of battery drain per trip. |
+| `Intro()`               | Displays the battery level and weather condition, then prompts the user to start the day. |
+| `Summary()`             | Displays a summary at the end of deliveries, including total, successful, and failed deliveries, plus remaining battery. |
+| `Decision_Logic()`      | Core decision-making function that evaluates all conditions and updates delivery status for each delivery. |
