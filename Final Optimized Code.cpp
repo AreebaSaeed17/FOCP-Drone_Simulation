@@ -82,7 +82,10 @@ void intro(int& battery, string& weather, string& start) {
 	cin >> start;
 	cout << "________________________________________________________ \n";
 }
-
+void SuccessRate(int successful, int unsuccessful, int delayed) {
+    double rate = (static_cast<double>(successful) / (successful + unsuccessful + delayed)) * 100.0;
+    cout << "Success Rate: " << rate << "%\n";
+}
 bool heavyload()
 {cout<<"----------Measuring Weight-----------\n";
  int weight = rand()%10+1;
@@ -106,7 +109,7 @@ void summary(int successful, int delayed, int failed, int battery) {
 	cout << "Failed Deliveries: " << failed << endl;
 	cout << "Remaining Battery: " << battery << " %\n";
 	cout << "***************************************\n";
-	
+	SuccessRate(successful,delayed,failed);
 }
 
 void Decision_Logic(string location, int& battery, int& successful, int& delayed, int& failed) {
@@ -260,6 +263,7 @@ int main() {
 		cout<<"____________________________________________________________________\n";
 	return 0;
 }
+
 
 
 
