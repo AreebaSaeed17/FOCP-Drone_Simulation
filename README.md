@@ -3,9 +3,9 @@
 # TITLE : DELIVERY DRONE SIMULATOR
 # Team Name : Drone Engineers 🕹️✨
 # Team Memebrs & Roles :
-1. Areeba Saeed : Team Leader & Programmer 1 ( Designed and implemented core functions, managed user interaction, and coordinated overall project development ).       
-2. Urooj Fatima : Programmer 2 & Logic Designer ( Created the program’s logic flow and flowchart, integrated additional features, and refined the code for efficiency ).       
-3. Heeba Aamir : Git Manager & Tester ( Handled version control and documentation, and performed extensive testing across different inputs and conditions to ensure reliability ).         
+1. Areeba Saeed : Team Leader & Programmer 1       
+2. Urooj Fatima : Programmer 2 & Logic Designer 
+3. Heeba Aamir : Git Manager & Tester 
 
 # Overview / Program Description:
 We have created a drone simulator, a program tasked with managing the daily operations of an autonomous delivery drone. Each day the drone completes three deliveries, at location A, B and C. Priot to each delivery, the drone assess the essential conditions such as the current weather (sunny, windy, rainy), battery level and it checks for the presence of potential  obstacles in the path (birds, aircrafts, restricted zones, etc). Based on these conditions, the drone is programmed to take a decision of whether to proceed with the delivery, delay the delivery or return to the base for charging. At the end of each simulated day, the drone generates a mission summary displaying the total number of deliveries deliveries, successful drops, failed attempts, delayed missions, and remaining battery life.   
@@ -37,9 +37,23 @@ Checks the essential conditions and looks for system malfunction.
 Decides whether to proceed with the delivery, delay it or fail the delivery.    
 Updates battery level and delivery counters accordingly.
 5. Summary() then displays the final report after all the deliveries.
-# - Description of how random environmental factors are simulated :
+# Description of how random environmental factors are simulated :
 Environmental factors (weather, obstacles, battery level, battery drain, and malfunction) are randomized using  to simulate real-world unpredictability.
 # Execution Instructions :
+ON A COMPILER :    
+Complile the code on a C++ compatible compiler like g++ and then run it.    
+On Git Bash :   
+Open a terminal in the folder containing the program file.       
+Compile the program using:       
+g++ -o drone_simulator "Final Optimized Code.cpp"            
+Run the program:        
+drone_simulator.exe           
+# Team Collabration Summary :
+TASK DISTRIBUTION :    
+1. Areeba Saeed : Designed and implemented the core program functions focusing on efficient logic and modular structure, handled all aspects of user interaction and interface flow, and coordinated the overall project development to ensure smooth integration of all components.
+2. Urooj Fatima : Created the program’s overall logic flow and designed the accompanying flowchart to visualize system behavior. Integrated additional features to enhance functionality and refined the code for greater efficiency and readability.
+3. Heeba Aamir : Handled version control and project documentation, ensured smooth collaboration while conducting extensive testing across a variety of inputs and conditions to ensure the program’s accuracy, stability, and reliability.
+# Evidence Of Git :
 # AI Tool Reflection :
 We have utilised the help of AI specifically Chat GPT for two things in our program:    
 1. Function for delay timer : We have added the delay timer function with the help of AI. When encountred with the task, we tried several times before resorting to the help of AI. With the help of Chat GPT, we learned how to simulate real-time pauses in program execution using system-level functionality. Working with AI to implement this taught us how to use platform-specific libraries like windows.h to access built-in functions such as Sleep() and how to modularize functionality by creating reusable delay logic instead of repeating code.     
