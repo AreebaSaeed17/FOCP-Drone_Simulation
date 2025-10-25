@@ -143,7 +143,20 @@ void Decision_Logic(string location, int& battery, int& successful, int& delayed
 		failed += 1;
 		return;
 	}
-
+	Adding a feature thats asks the user if he wants to recharge the battery mid mission if it reaches a certain value.
+	if (battery <=25 && battery > 5) {
+	cout << battery << "% battery reached\n Do you want to recharge it ?\n";
+	string choice;
+	cin >> choice;
+	if (choice == "yes" || choice == "Yes" || choice == "YES") {
+		cout << "Returning to base to recharge\n";
+		battery += 30;
+		cout << battery << "%\n";
+	}
+	else {
+		cout << "Continuing with the deliveries\n";
+	}
+}
 	//Checking for the conditions specified in the Assignment problem
 	if (weather == "rainy") {
 		cout << "Delivery delayed due to Rainy Weather.\n";
@@ -263,6 +276,7 @@ int main() {
 		cout<<"____________________________________________________________________\n";
 	return 0;
 }
+
 
 
 
