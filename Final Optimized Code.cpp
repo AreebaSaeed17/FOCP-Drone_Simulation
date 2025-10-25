@@ -143,7 +143,7 @@ void Decision_Logic(string location, int& battery, int& successful, int& delayed
 		failed += 1;
 		return;
 	}
-	Adding a feature thats asks the user if he wants to recharge the battery mid mission if it reaches a certain value.
+	//Adding a feature thats asks the user if he wants to recharge the battery mid mission if it reaches a certain value.
 	if (battery <=25 && battery > 5) {
 	cout << battery << "% battery reached\n Do you want to recharge it ?\n";
 	string choice;
@@ -276,6 +276,8 @@ int main() {
 		cout<<"____________________________________________________________________\n";
 	return 0;
 }
+}
+
 
 
 
