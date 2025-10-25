@@ -2,7 +2,7 @@
 #include<iostream>
 #include<cstdlib>
 #include<ctime>
-
+#include<windows.h>
 using namespace std;			
 //__________________Creating all the necessary functions__________________
 
@@ -83,6 +83,20 @@ void intro(int& battery, string& weather, string& start) {
 	cout << "________________________________________________________ \n";
 }
 
+bool heavyload()
+{cout<<"----------Measuring Weight-----------\n";
+ int weight = rand()%10+1;
+ 
+ if(weight > 5)
+   { cout<<"HEAVY LOAD WARNING!!!!\nWeight is more than 5kg, Drone might slow down during mission\n";
+   return 0;}
+ else 
+   {cout<<"Weight is within the limit Drone taking off \n";
+   return 1;}
+  }
+void DelayTimer(int DelayTime) {
+    Sleep(DelayTime);}	
+
 void summary(int successful, int delayed, int failed, int battery) {
 	cout << "\n";
 	cout << " ************ DAILY SUMMARY ***********\n";
@@ -92,11 +106,12 @@ void summary(int successful, int delayed, int failed, int battery) {
 	cout << "Failed Deliveries: " << failed << endl;
 	cout << "Remaining Battery: " << battery << " %\n";
 	cout << "***************************************\n";
+	
 }
 
 void Decision_Logic(string location, int& battery, int& successful, int& delayed, int& failed) {
 	//I've created this funCtion to easily check the constraints for delivery each time
-
+      heavyload();
 	//displaying where The Drone is Delivering
 	cout << "Delivering to: " << location << endl;
 
@@ -110,6 +125,7 @@ void Decision_Logic(string location, int& battery, int& successful, int& delayed
 	string weather = WeatherInfo();
 	int battery_drain = Battery_Drain();
 	bool obstacle = Check_For_Obstacle();
+	DelayTimer(3000);
 
 	//displaying conditions to the user
 	cout << "Battery: " << battery << " %\n";
@@ -244,6 +260,7 @@ int main() {
 		cout<<"____________________________________________________________________\n";
 	return 0;
 }
+
 
 
 
