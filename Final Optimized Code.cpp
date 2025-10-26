@@ -80,7 +80,7 @@ void intro(int& battery, string& weather, string& start) {
 	cout << "Do you want to start today's delivery? \n";
 	cout << "Type 'yes' to proceed \n";
 	cin >> start;
-	cout << "________________________________________________________ \n";
+	cout << "____________________________________________________________________ \n";
 }
 void SuccessRate(int successful, int unsuccessful, int delayed) {
     double rate = (static_cast<double>(successful) / (successful + unsuccessful + delayed)) * 100.0;
@@ -278,6 +278,7 @@ int main() {
 	return 0;
 }
 }
+
 
 
 
