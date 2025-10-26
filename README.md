@@ -42,6 +42,9 @@ Environmental factors (weather, obstacles, battery level, battery drain, and mal
 # Execution Instructions :
 ON A COMPILER :    
 Complile the code on a C++ compatible compiler like g++ and then run it.    
+Output :     
+![Input Screenshot](https://github.com/AreebaSaeed17/FOCP-Drone_Simulation/blob/7144097288ffe087be43c07c8d0642f9d3b455bd/Images/D.png)
+![Input Screenshot](https://github.com/AreebaSaeed17/FOCP-Drone_Simulation/blob/7144097288ffe087be43c07c8d0642f9d3b455bd/Images/E.png)
 On Git Bash :   
 Open a terminal in the folder containing the program file.       
 Compile the program using:       
@@ -49,7 +52,10 @@ g++ -o drone_simulator "Final Optimized Code.cpp"
 Run the program:        
 drone_simulator.exe           
 Input :   
-![Input Screenshot](images/A.png)
+![Input Screenshot](https://github.com/AreebaSaeed17/FOCP-Drone_Simulation/blob/7144097288ffe087be43c07c8d0642f9d3b455bd/Images/A.png)     
+Output :          
+![Input Screenshot](https://github.com/AreebaSaeed17/FOCP-Drone_Simulation/blob/7144097288ffe087be43c07c8d0642f9d3b455bd/Images/B.png)
+![Input Screenshot](https://github.com/AreebaSaeed17/FOCP-Drone_Simulation/blob/7144097288ffe087be43c07c8d0642f9d3b455bd/Images/C.png)
 # Assumptions:
 We have made the following assumptions :     
 1. The user enters only valid locations i.e. (A,B AND C ) without typos.
@@ -57,12 +63,18 @@ We have made the following assumptions :
 3. Battery drain per trip is randomly generated.           
 4. Battery recharge has been specified to a preset value.
 5. The drone can only make three deliveries.
+6. If system malfunction happens, the drone shouldn't make the delivery.
 # Team Collabration Summary :
 TASK DISTRIBUTION :    
 1. Areeba Saeed : Designed and implemented the core program functions focusing on efficient logic and modular structure, handled all aspects of user interaction and interface flow, and coordinated the overall project development to ensure smooth integration of all components.
 2. Urooj Fatima : Created the program’s overall logic flow and designed the accompanying flowchart to visualize system behavior. Integrated additional features to enhance functionality and refined the code for greater efficiency and readability.
 3. Heeba Aamir : Handled version control and project documentation, ensured smooth collaboration while conducting extensive testing across a variety of inputs and conditions to ensure the program’s accuracy, stability, and reliability.
 # Evidence Of Git :
+Branch Name : Main     
+Evidence :        
+![Input Screenshot](https://github.com/AreebaSaeed17/FOCP-Drone_Simulation/blob/7144097288ffe087be43c07c8d0642f9d3b455bd/Images/F.png)
+![Input Screenshot](https://github.com/AreebaSaeed17/FOCP-Drone_Simulation/blob/7144097288ffe087be43c07c8d0642f9d3b455bd/Images/G.png)
+![Input Screenshot](https://github.com/AreebaSaeed17/FOCP-Drone_Simulation/blob/7144097288ffe087be43c07c8d0642f9d3b455bd/Images/H.png)
 # AI Tool Reflection :
 We have utilised the help of AI specifically Chat GPT for two things in our program:    
 1. Function for delay timer : We have added the delay timer function with the help of AI. When encountred with the task, we made several unsuccesful attempts of our own before resorting to the help of AI. With the help of Chat GPT, we learned how to simulate real-time pauses in program execution using system-level functionality.This experience helped us understand the use of platform-specific libraries like windows.h to access built-in functions such as Sleep() and how to modularize functionality by creating reusable delay logic instead of repeating code.     
