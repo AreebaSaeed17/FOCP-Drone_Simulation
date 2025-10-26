@@ -47,7 +47,9 @@ Open a terminal in the folder containing the program file.
 Compile the program using:       
 g++ -o drone_simulator "Final Optimized Code.cpp"            
 Run the program:        
-drone_simulator.exe
+drone_simulator.exe           
+Input :   
+![Input Screenshot](images/A.png)
 # Assumptions:
 We have made the following assumptions :     
 1. The user enters only valid locations i.e. (A,B AND C ) without typos.
