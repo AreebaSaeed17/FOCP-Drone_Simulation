@@ -273,11 +273,12 @@ int main() {
 		summary(successful, delayed, failed, battery);
 	}
 	else{
-		cout<<"You haven't started the delivery program. The program will now exit.";
+		cout<<"You haven't started the delivery program. The program will now exit.\n";
 		cout<<"____________________________________________________________________\n";
 	return 0;
 }
 }
+
 
 
 
