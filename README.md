@@ -47,7 +47,14 @@ Open a terminal in the folder containing the program file.
 Compile the program using:       
 g++ -o drone_simulator "Final Optimized Code.cpp"            
 Run the program:        
-drone_simulator.exe           
+drone_simulator.exe
+# Assumptions:
+We have made the following assumptions :     
+1. The user enters only valid locations i.e. (A,B AND C ) without typos.
+2. Intial battery, weather and obstacles are generated randomly to mimic real world conditions.      
+3. Battery drain per trip is randomly generated.           
+4. Battery recharge has been specified to a preset value.
+5. The drone can only make three deliveries.
 # Team Collabration Summary :
 TASK DISTRIBUTION :    
 1. Areeba Saeed : Designed and implemented the core program functions focusing on efficient logic and modular structure, handled all aspects of user interaction and interface flow, and coordinated the overall project development to ensure smooth integration of all components.
@@ -56,8 +63,12 @@ TASK DISTRIBUTION :
 # Evidence Of Git :
 # AI Tool Reflection :
 We have utilised the help of AI specifically Chat GPT for two things in our program:    
-1. Function for delay timer : We have added the delay timer function with the help of AI. When encountred with the task, we tried several times before resorting to the help of AI. With the help of Chat GPT, we learned how to simulate real-time pauses in program execution using system-level functionality. Working with AI to implement this taught us how to use platform-specific libraries like windows.h to access built-in functions such as Sleep() and how to modularize functionality by creating reusable delay logic instead of repeating code.     
-2. Performance Score Formula : With the help of Chat GPT, we developed a formula for performance score to evaluate the performance of our drone in order to see how effectively and reliably it operates under various conditions and determine mission success. We learned how to turn real-world behavior into measurable logic and use AI to design, refine, and implement a scoring system efficiently.
+1. Function for delay timer : We have added the delay timer function with the help of AI. When encountred with the task, we made several unsuccesful attempts of our own before resorting to the help of AI. With the help of Chat GPT, we learned how to simulate real-time pauses in program execution using system-level functionality.This experience helped us understand the use of platform-specific libraries like windows.h to access built-in functions such as Sleep() and how to modularize functionality by creating reusable delay logic instead of repeating code.     
+2. Performance Score Formula :With ChatGPT’s help, we designed a formula to evaluate the drone’s performance, measuring how effectively and reliably it operates under different conditions and determining mission success. We learned how to turn real-world behavior into measurable logic and use AI tools to design, refine, and implement a scoring system efficiently.
+# Future Improvements 
+If we had learned advanced concepts like arrays and file handling, we could have improved the simulator by:     
+1. Using file handling to save delivery logs (locations, weather, and outcomes) for performance tracking.        
+2. Using arrays to manage multiple delivery locations dynamically instead of hardcoding them.               
 
 
 
